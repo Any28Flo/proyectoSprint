@@ -1,0 +1,76 @@
+<!-- Mostrar en este HTML las respuestas de cada topic -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FORO</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  </head>
+  <body>
+   <div class="container">
+     <div class="row">
+       <div class="col l8 center">
+         <h1>Foro cool</h1>
+       </div>
+       <div class="col l4 input-field">
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Buscar</label>
+       </div>
+     </div>
+     <!-- Row para las opciones crear,filtrar -->
+     <div class="row">
+          <a class="waves-effect waves-light btn" href="#modal1">Crear Topic</a>
+
+     </div>
+     <div class="row">
+       <div id="listaTopics">
+         <!-- <p>Titulo topic</p>
+         <p>Respuestas</p> -->
+       </div>
+     </div>
+   </div>
+    <!-- <h1>Aqui va el contenido de tema individual</h1> -->
+    <!-- Borar cuando se entienda como pasar info con topic id-->
+    <!-- <h1>Ingresa el topic id a este html usando la url.</h1> -->
+    <a href='verTopic.html?topic_id=2'>Algo asi</a><br/>
+    <a href='verTopic.html?topic_id=1'>O asi</a>
+    <!-- Borar cuando se entienda como pasar info con topic id-->
+    <!-- Zona de modales -->
+    
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>CREAR TOPIC</h4>
+        <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="autor" type="text" class="validate">
+                <label for="icon_prefix">Por:</label>
+              </div>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="contenido" type="text" class="validate">
+              <label>Mensaje:</label>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a id="enviarTopic" href="#!" class="modal-close modal-action waves-effect waves-green btn-flat">Enviar</a>
+        <!-- <a id="enviarTopic"  class="modal-close modal-action waves-effect waves-green btn-flat">Cancelar</a> -->
+      </div>
+    </div>
+            
+
+     <!-- jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+    <script src="js/functions.js"></script>
+    <script src="js/verTopic.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
